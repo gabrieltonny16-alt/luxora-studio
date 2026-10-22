@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0f"><meta name="description" content="Luxora Studio — AI-powered image and video creation studio for web and Android.">
+<title>Luxora Studio</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brandmark">✦</span><span>LUXORA <small>STUDIO</small></span></a><span class="status"><i></i> Workspace</span></header>
+<main>
+<section class="hero"><p class="eyebrow">YOUR CREATIVE UNIVERSE</p><h1>Imagine it.<br><em>Create it.</em></h1><p class="intro">Bring your ideas to life with a studio built for visual imagination.</p></section>
+<nav class="tabs" aria-label="Studio mode"><button class="tab active" data-mode="image">✧ Image Studio</button><button class="tab" data-mode="video">▶ Video Studio</button></nav>
+<section class="workspace">
+<div class="form-panel">
+<div class="section-head"><div><p class="eyebrow">CREATE SOMETHING</p><h2 id="mode-title">Image Studio</h2></div><span class="pill">Early access</span></div>
+<label for="prompt">Your creative prompt</label><textarea id="prompt" rows="4" placeholder="Describe the image you imagine..."></textarea>
+<div class="settings"><div><label for="style">Visual direction</label><select id="style"><option>Cinematic</option><option>Photorealistic</option><option>Illustration</option><option>Editorial</option><option>Fantasy</option><option>Minimal</option></select></div><div><label for="ratio">Aspect ratio</label><select id="ratio"><option>1:1 Square</option><option>3:2 Landscape</option><option>2:3 Portrait</option><option>16:9 Widescreen</option><option>9:16 Vertical</option></select></div></div>
+<div id="video-settings" class="settings hidden"><div><label for="duration">Video duration</label><select id="duration"><option>5 seconds</option><option>10 seconds</option></select></div><div><label for="motion">Motion</label><select id="motion"><option>Smooth cinematic</option><option>Dynamic</option><option>Subtle</option></select></div></div>
+<button id="create" class="primary">Prepare creation <span>↗</span></button>
+<p class="notice" id="notice">Generation is not connected yet. This interface will not pretend to create an AI image until a real model backend is configured.</p>
+</div>
+<aside class="preview-panel"><div class="preview-top"><span>CANVAS PREVIEW</span><span class="dot">●</span></div><div class="preview" id="preview"><div class="orb">✦</div><p id="preview-title">Your next idea starts here</p><small>Your generated work will appear here once a real generation engine is connected.</small></div><div class="preview-footer"><span>Private workspace</span><span>Luxora Studio · v0.1</span></div></aside>
+</section>
+<section class="bottom"><div><span class="mini-icon">↗</span><div><strong>Built for your ideas</strong><p>Prompts and creative controls, ready for real model integration.</p></div></div><div><span class="mini-icon">◇</span><div><strong>Web + Android</strong><p>Mobile-first layout designed for your phone.</p></div></div><div><span class="mini-icon">⌁</span><div><strong>Honest status</strong><p>No fake generation, progress bars, or sample results.</p></div></div></section>
+</main><footer>© 2026 Luxora Studio <span>IMAGINE · CREATE · EVOLVE</span></footer><script src="app.js"></script>
+</body></html>
